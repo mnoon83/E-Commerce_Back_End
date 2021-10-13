@@ -14,3 +14,9 @@ CREATE TABLE product (
     stock INT DEFAULT (10) NOT NULL,
     cat_name INT FOREIGN KEY category REFERENCE category(id),
 );
+
+USE commerce_db;
+CREATE TABLE tag (
+	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    tag_name VARCHAR (15),
+);
